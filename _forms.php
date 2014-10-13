@@ -1,11 +1,36 @@
-<!DOCTYPE html><html lang="en-gb">
-
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<title>Form Example - Barebones</title>
 	<meta charset="utf-8"/>
+	<title>Form Example - Barebones</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
+
+	<script type="text/javascript">//<![CDATA[
+		if (typeof scriptsLoaded === 'undefined') {
+			var scriptsLoaded = [];
+		}
+		//Load Modernizr only once.
+		if (!("Modernizr" in scriptsLoaded)) {
+			document.write('<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"><\/script>');
+			window.Modernizr || document.write('<script type="text/javascript" src="../js/vendor/modernizr.custom.70689.js"><\/script>');
+			scriptsLoaded["Modernizr"] = true;
+		}
+		//Load jQuery only once.
+		if (!("jQuery" in scriptsLoaded)) {
+			window.jQuery || document.write('<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"><\/script>');
+			scriptsLoaded["jQuery"] = true;
+		}
+		//]]>
+	</script>
+
+	<script type="text/javascript">//<![CDATA[
+		var debugEnabled = true; // ONLY FOR TEMPLATE TESTING; NOT FOR LIVE SITE
+		//]]>
+	</script>
 </head>
 
 <body>
