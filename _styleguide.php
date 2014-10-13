@@ -19,6 +19,29 @@
 				<p class="lede">Basic markup and typographic styles</p>
 			</header>
 
+<?php
+
+	$swatches = array(
+		array("000000", '$c-black',  "black"),
+		array("ffffff", '$c-white',  "white")
+	);
+
+	function printswatches($swatches) {
+		$html = '';
+		if($swatches) {
+			foreach ($swatches as $swatch) {
+				$swatch_color = "#{$swatch[0]}";
+				$swatch_sass =  "{$swatch[1]}";
+				$swatch_name =  "{$swatch[2]}";
+				$html .= "\t\t\t<li><div class=\"swatch\" style=\"background-color: {$swatch_color}\"></div><label><p>{$swatch_color}</p><p>{$swatch_sass}</p><p>{$swatch_name}</p></label></li>\n";
+			}
+		}
+		echo '<ul class="swatches">' . $html . '</ul>';
+	}
+
+?>
+
+
 			<h2>Sections <a href="#">Linked</a></h2>
 			<p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
 			<p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
