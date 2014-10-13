@@ -75,7 +75,7 @@
 	foreach ($files as $file):
 		echo '<section class="pattern" style="position: relative;">';
 		echo '<div class="p-code">';
-		echo '<div class="pattern-file"><a href="'. $PHP_SELF . '?show=' . $file . '">' . substr($file, 0, -5) . '</a></div>';
+		echo '<div class="pattern-file"><a href="'. $_SERVER['PHP_SELF'] . '?show=' . $file . '">' . substr($file, 0, -5) . '</a></div>';
 		include($patterns_dir.'/'.$file);
 		echo '</div>';
 		echo '<details class="primer">';
