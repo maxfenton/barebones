@@ -24,8 +24,7 @@
 		}
 		//Load Modernizr only once.
 		if (!("Modernizr" in scriptsLoaded)) {
-			document.write('<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"><\/script>');
-			window.Modernizr || document.write('<script type="text/javascript" src="../js/vendor/modernizr.custom.70689.js"><\/script>');
+			window.Modernizr || document.write('<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"><\/script>');
 			scriptsLoaded["Modernizr"] = true;
 		}
 		//Load jQuery only once.
